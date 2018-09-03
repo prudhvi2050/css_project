@@ -12,6 +12,23 @@
         <title>Natours | Exciting tours for adventurous people</title>
     </head>
     <body>
+
+        <div class="navigation">
+            <input type="checkbox" name="" id="navi-toggle" class="navigation__checkbox">
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <div class="navigation__background">&nbsp;</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation_item"><a href="#" class="navigation__link">About Natours</a></li>
+                    <li class="navigation_item"><a href="#" class="navigation__link">Your benifits</a></li>
+                    <li class="navigation_item"><a href="#" class="navigation__link">Popular tours</a></li>
+                    <li class="navigation_item"><a href="#" class="navigation__link">Stories</a></li>
+                    <li class="navigation_item"><a href="#" class="navigation__link">Book now</a></li>
+                </ul>
+            </nav>
+        </div>
         <header class="header">
             <div class="header__logo-box">
                 <img src="img/logo-white.png" alt="Logo" class="header__logo">
@@ -99,7 +116,7 @@
                 </div>
             </section>
 
-            <section class="section-tours">
+            <section class="section-tours" id="section-tours">
                 <div class="u-center-text u-margin-bottom-medium">
                     <h2 class="heading-secondary">
                         Most popular tours
@@ -134,7 +151,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$297</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book now !</a>
+                                    <a href="#popup" class="btn btn--white">Book now !</a>
                                 </div>
                             </div>
                         </div>
@@ -166,7 +183,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$497</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book now !</a>
+                                    <a href="#popup" class="btn btn--white">Book now !</a>
                                 </div>
                             </div>
                         </div>
@@ -198,7 +215,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$897</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book now !</a>
+                                    <a href="#popup" class="btn btn--white">Book now !</a>
                                 </div>
                             </div>
                         </div>
@@ -319,5 +336,23 @@
                 </div>
             </div>
         </footer>
+
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
+                    <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+                    <h3 class="heading-teritiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+                    <p class="popup__text">
+                        Lorem ipsum dolor sit amet, vix an odio volutpat, at vocibus mentitum quaerendum duo, pro amet modus dicit et. Periculis constituam ad est, scaevola apeirian ad eos. At ornatus adipisci aliquando pri, vel dicant causae scripserit ei. Sed veritus detraxit laboramus no. Feugiat repudiare in eos, eu congue urbanitas gloriatur vis, cu tritani epicurei moderatius his. Hinc nominati concludaturque eos ne.
+                    </p>
+                    <a href="#" class="btn btn--green">Book now</a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
